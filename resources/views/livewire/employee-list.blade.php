@@ -11,6 +11,7 @@
                         <th scope="col">Department</th>
                         <th scope="col">Designation</th>
                         <th scope="col">Joining Date</th>
+                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -23,6 +24,10 @@
                         <td> {{ $employee->department }} </td>
                         <td> {{ $employee->designation }} </td>
                         <td> {{ $employee->joining_date }} </td>
+                        <td> 
+                            <a href="/employee/{{ $employee->id}}" class="btn btn-primary">Edit</a>
+                            <button class="btn btn-danger" wire:click="Delete({{ $employee->id}})">Delete</button>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>

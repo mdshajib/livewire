@@ -13,10 +13,20 @@ class EmployeeList extends Component
         return view('livewire.employee-list');
     }
     public function mount(){
-        return $this->employees = Employee::all();
+        $this->allEmployees();
     }
     public function getEmployeeProperty()
     {
         
+    }
+    public function allEmployees(){
+        return $this->employees = Employee::all();
+    }
+    public function Delete($id)
+    {
+        $employee = Employee::find($id);
+        $employee->delete();
+        $this->employees = $this->allEmployees();
+        return "deleted";
     }
 }

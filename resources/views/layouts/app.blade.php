@@ -13,7 +13,7 @@
     @livewireStyles
     <!-- Bootstrap core CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="{{asset('/')}}css/style.css" rel="stylesheet">
 
 <meta name="theme-color" content="#7952b3">
 
