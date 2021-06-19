@@ -1,0 +1,12 @@
+.bg-dark {
+    background-color: #101520!important;
+}
+.nav-link {
+    color: #fff;
+    border-radius: 20px;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #d1cfcf;
+    background-color: #333039;
+    
+}
